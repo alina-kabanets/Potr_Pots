@@ -1,0 +1,20 @@
+@import '../utils/mixins';
+
+.nav__list {
+  @include pageGrid;
+
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  grid-column: 2 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+}
