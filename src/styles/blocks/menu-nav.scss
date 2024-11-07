@@ -1,0 +1,42 @@
+@import '../utils/mixins';
+@import '../utils/vars';
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $c-white;
+  }
+}
+
+.basket {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 60px;
+    content: "0";
+    width: 14px;
+    height: 14px;
+    background-color: #eb5757;
+    color: $c-white;
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
