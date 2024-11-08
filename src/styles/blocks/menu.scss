@@ -21,7 +21,11 @@ $menu-width: 230px;
 .menu {
   &__content {
     position: relative;
-    padding: 200px 30px 10px;
+    padding-top: 200px;
+    padding-bottom: 10px;
+    
+    @include contentPaddingInline;
+
     box-sizing: border-box;
     height: 100vh;
     background-color: $c-turquoise;
