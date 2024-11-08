@@ -1,7 +1,7 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
-@import url(blocks/page.scss);
-@import url(blocks/header.scss);
-@import url(blocks/menu.scss);
-@import url(blocks/menu-nav.scss);
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/menu-nav';

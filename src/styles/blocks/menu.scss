@@ -21,7 +21,7 @@ $menu-width: 230px;
 .menu {
   &__content {
     position: relative;
-    padding: 15px 30px 10px;
+    padding: 200px 30px 10px;
     box-sizing: border-box;
     height: 100vh;
     background-color: $c-turquoise;
@@ -32,7 +32,7 @@ $menu-width: 230px;
   height: 48px;
   width: 48px;
   display: block;
-  background-image: url(../../images/mobile/menu_icon.png);
+  background-image: url(../images/mobile/menu_icon.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -58,7 +58,7 @@ $menu-width: 230px;
 
   &__line {
     margin-bottom: 5px;
-    background-image: url(../../images/mobile/menu-line.png);
+    background-image: url(../images/mobile/menu-line.png);
     height: 44px;
     width: 1px;
   }
@@ -66,7 +66,7 @@ $menu-width: 230px;
   &__icon-cross {
     height: 48px;
     width: 48px;
-    background-image: url(../../images/mobile/icon-cross.png);
+    background-image: url(../images/mobile/icon-cross.png);
     background-repeat: no-repeat;
     background-position: center;
   }
