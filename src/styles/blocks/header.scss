@@ -7,8 +7,8 @@ h2 {
 
 .header {
   height: 100vh;
-  
-  &__container__top {
+
+  &__container {
     padding: 15px 30px 10px;
   }
 
@@ -16,18 +16,18 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: end;
+  }
 
-    &__logo {
-      text-decoration: none;
-
-      font-family: $font-bebas;
-      font-size: 36px;
-      font-weight: 400;
-      line-height: 43.2px;
-      letter-spacing: 0.06em;
-      color: $c-grey;
-      text-align: center;
-    }
+  &__logo {
+    text-decoration: none;
+    font-family: $font-bebas;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0.06em;
+    color: $c-grey;
+    text-align: center;
   }
 
   &__image {
@@ -38,93 +38,91 @@ h2 {
 
   &__bottom {
     @include pageGrid;
-    
+
     position: relative;
-    padding: 0 30px;
+    padding-inline: 30px;
+  }
 
-    &__title {
-      margin-bottom: 30px;
-      grid-column: span 2;
-      box-sizing: border-box;
-      font-family: $font-bebas;
-      font-size: 36px;
-      line-height: 43px;
-      letter-spacing: 0.15em;
-      color: $c-white;
-      -webkit-text-stroke: 0.7px $c-turquoise;
+  &__ad {
+    display: flex;
+    flex-direction: column;
+  }
 
-      // text-shadow:
-      //   0.68px 0.68px 0 #03839e,
-      //   -0.68px -0.68px 0 #03839e,
-      //   0.68px -0.68px 0 #03839e,
-      //   -0.68px 0.68px 0 #03839e,
-      //   0.68px 0.68px 0 #03839e;
+  &__price {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $c-grey;
+  }
 
-      &--solid {
-        color: $c-turquoise;
-      }
-    }
+  &__text {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 
-    &__ad {
-      display: flex;
-      flex-direction: column;
+  &__title {
+    margin-bottom: 30px;
+    grid-column: span 2;
+    box-sizing: border-box;
+    font-family: $font-bebas;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.15em;
+    color: $c-white;
+    -webkit-text-stroke: 0.7px $c-turquoise;
 
-      &__price {
-        margin: 0;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 36px;
-        color: $c-grey;
-      }
+    // text-shadow:
+    //   0.68px 0.68px 0 #03839e,
+    //   -0.68px -0.68px 0 #03839e,
+    //   0.68px -0.68px 0 #03839e,
+    //   -0.68px 0.68px 0 #03839e,
+    //   0.68px 0.68px 0 #03839e;
 
-      &__text {
-        margin: 0 0 20px;
-        font-size: 14px;
-        line-height: 21px;
-      }
-
-      &__buy-now {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 260px;
-        height: 48px;
-        font-weight: 600;
-        background-color: $c-yellow;
-
-        &__link {
-          padding-right: 24px;
-          text-decoration: none;
-          color: $c-black;
-          text-transform: uppercase;
-          font-size: 14px;
-          line-height: 21px;
-        }
-      }
+    &--solid {
+      color: $c-turquoise;
     }
   }
 
-  &__side {
-    &__link {
-      position: absolute;
-      bottom: 35px;
-      right: 5px;
-      transform: rotate(90deg);
-      transform-origin: 100% 0;
-      font-size: 12px;
-      line-height: 18px;
-      text-decoration: none;
-      color: $c-turquoise;
-    }
+  &__buy-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 48px;
+    font-weight: 600;
+    background-color: $c-yellow;
+  }
 
-    &__arrow {
-      position: absolute;
-      bottom: 0;
-      right: 7px;
-      background-image: url(../../images/mobile/Arrow.png);
-      background-repeat: no-repeat;
-      width: 10px;
-      height: 44px;
-    }
+  &__buy-now-link {
+    padding-right: 24px;
+    text-decoration: none;
+    color: $c-black;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__side-link {
+    position: absolute;
+    bottom: 35px;
+    right: 5px;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: $c-turquoise;
+  }
+
+  &__side-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    background-image: url(../../images/mobile/Arrow.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 44px;
   }
 }

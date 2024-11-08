@@ -1,13 +1,21 @@
 @import '../utils/mixins';
 @import '../utils/vars';
 
-$menu-width: 231px;
+$menu-width: 230px;
 
 .page__menu {
   position: fixed;
   top: 0;
-  z-index: 10;
-  right: -$menu-width;
+  right: 0;
+  z-index: 5;
+  width: $menu-width;
+  opacity: 0;
+  pointer-events: none;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
 .menu {
@@ -16,8 +24,6 @@ $menu-width: 231px;
     padding: 15px 30px 10px;
     box-sizing: border-box;
     height: 100vh;
-    width: $menu-width;
-    // left: 0;
     background-color: $c-turquoise;
   }
 }
@@ -39,7 +45,6 @@ $menu-width: 231px;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  // transform-origin: 100% 0;
 
   &__text {
     margin-bottom: 18px;
