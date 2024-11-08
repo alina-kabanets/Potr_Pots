@@ -1,6 +1,3 @@
-@import '../utils/mixins';
-@import '../utils/vars';
-
 $menu-width: 230px;
 
 .page__menu {
@@ -18,6 +15,19 @@ $menu-width: 230px;
   }
 }
 
+.icon-menu {
+  height: 48px;
+  width: 48px;
+  display: block;
+  background-image: url(../images/mobile/menu_icon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @include onDesktop {
+    background-image: url(../images/desktop/basket-logo.png);
+  }
+}
+
 .menu {
   &__content {
     position: relative;
@@ -30,15 +40,6 @@ $menu-width: 230px;
     height: 100vh;
     background-color: $c-turquoise;
   }
-}
-
-.icon-menu {
-  height: 48px;
-  width: 48px;
-  display: block;
-  background-image: url(../images/mobile/menu_icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .side-close {
