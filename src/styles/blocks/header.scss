@@ -40,9 +40,10 @@ h2 {
   }
 
   &__content {
-    @include onTablet {
-      @include pageGrid;
-    }
+    @include pageGrid;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+
     @include contentPaddingInline;
     position: relative;
   }
@@ -62,16 +63,16 @@ h2 {
   }
 
   &__title {
-    margin-bottom: 30px;
-    grid-column: span 2;
-    box-sizing: border-box;
+    // margin-bottom: 30px;
+    grid-column: 1 / -1;
     font-family: $font-bebas;
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.15em;
     -webkit-text-stroke: 0.7px $c-turquoise;
     color: transparent;
-
+    min-width: 260px;
+    
     // text-shadow:
     //   0.68px 0.68px 0 #03839e,
     //   -0.68px -0.68px 0 #03839e,
@@ -123,6 +124,8 @@ h2 {
     font-weight: 700;
     line-height: 36px;
     color: $c-grey;
+    margin: 0;
+    padding-top: 30px;
 
     @include onTablet {
       margin-top: -20px;
@@ -135,6 +138,8 @@ h2 {
     margin: 0 0 20px;
     font-size: 14px;
     line-height: 21px;
+    grid-column: 1 / 2;
+    white-space: nowrap;
 
     @include onTablet {
       margin-top: -20px;
@@ -146,7 +151,9 @@ h2 {
   }
 
   &__buy-now-button {
-    padding-right: 24px;
+    grid-column: 1 / -1;
+    // padding-right: 24px;
+    box-sizing: border-box;
     color: $c-black;
     text-transform: uppercase;
     font-size: 14px;
@@ -164,8 +171,9 @@ h2 {
   }
 
   &__side-text {
+    margin: 0;
     position: absolute;
-    bottom: 35px;
+    bottom: 110px;
     right: 5px;
     // transform: rotate(90deg);
     // transform-origin: 100% 0;
@@ -173,6 +181,7 @@ h2 {
     line-height: 18px;
     color: $c-turquoise;
     writing-mode: vertical-lr;
+    text-decoration: none;
 
     @include onTablet {
       left: 20px;
@@ -182,7 +191,7 @@ h2 {
 
   &__side-arrow {
     position: absolute;
-    bottom: 0;
+    bottom: 56px;
     right: 7px;
     background-image: url(../images/mobile/Arrow.png);
     background-repeat: no-repeat;
@@ -208,7 +217,10 @@ h2 {
   }
 
   &__right-side-text {
-    @include onTablet { 
+    opacity: 0;
+
+    @include onTablet {
+      opacity: 1;
       position: absolute;
       bottom: -100px;
       right: -4px;
