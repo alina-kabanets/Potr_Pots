@@ -31,17 +31,18 @@
   @include onDesktop {
     --columns: 12;
     column-gap: 30px;
+      // max-width: 1020px;
   }
 }
 
 @mixin contentPaddingInline() {
-  padding-inline: 30px;
+  padding-inline: $padding-inline-mobile;
 
   @include onTablet {
-    padding-inline: 34px;
+    padding-inline: $padding-inline-tablet;
   }
 
   @include onDesktop {
-    padding-inline: 135px;
+    padding-inline: $padding-inline-desktop;
   }
 }
