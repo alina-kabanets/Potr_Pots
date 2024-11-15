@@ -36,7 +36,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: end;
+    align-items: center;
   }
 
   &__logo {
@@ -52,11 +52,45 @@ h2 {
     @include hover(transform, scale(1.2));
   }
 
+  &__nav {
+    opacity: 0;
+
+    @include onDesktop {
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      align-items: end;
+      text-align: end;
+      padding: 0;
+  
+      gap: 60px;
+      list-style: none;
+    }
+  }
+
+  &__item {
+    @include hover(transform, scale(1.2));
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    color: $c-light-grey;
+  }
+
   &__rect {
     @include onTablet {
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
+      left: 0;
       z-index: -2;
       background-image: url(../images/tablet/Rectangle.png);
       background-repeat: no-repeat;
