@@ -5,6 +5,10 @@
   }
 }
 
+@mixin transiton-default($_property) {
+  transition: #{$_property} 0.3s;
+}
+
 @mixin onTablet {
   @media (min-width: $tablet-min-width) {
     @content;
@@ -31,7 +35,6 @@
   @include onDesktop {
     --columns: 12;
     column-gap: 30px;
-      // max-width: 1020px;
   }
 }
 

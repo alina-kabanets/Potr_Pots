@@ -2,6 +2,11 @@ h2 {
   margin: 0;
 }
 
+.page__body {
+  min-width: 320px;
+  // max-width: 1020px;
+}
+
 .header {
   height: 100vh;
 
@@ -9,7 +14,6 @@ h2 {
     @include pageGrid;
     @include contentPaddingInline;
     position: relative;
-    // box-sizing: border-box;
   }
 
   &__container {
@@ -44,6 +48,8 @@ h2 {
     letter-spacing: 0.06em;
     color: $c-grey;
     text-align: center;
+
+    @include hover(transform, scale(1.2));
   }
 
   &__rect {
@@ -171,10 +177,10 @@ h2 {
 
   &__buy-now-button {
     grid-column: 1 / -1;
-    // padding-right: 24px;
     box-sizing: border-box;
     color: $c-black;
     text-transform: uppercase;
+    font-family: inherit;
     font-size: 14px;
     line-height: 21px;
     height: 48px;
@@ -182,6 +188,15 @@ h2 {
     background-color: $c-yellow;
     border: none;
     padding: 0;
+
+    &:hover {
+      opacity: 70%;
+    }
+
+    &::after {
+      content: url(../images/mobile/button-arrow.png);
+      padding-left: 22px;
+    }
 
     @include onTablet {
       grid-column: 2 / 4;
@@ -199,6 +214,7 @@ h2 {
     position: absolute;
     bottom: 94px;
     right: 5px;
+    max-width: 132px;
     font-size: 12px;
     line-height: 18px;
     color: $c-turquoise;

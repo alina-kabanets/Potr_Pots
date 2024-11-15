@@ -10,6 +10,28 @@
     list-style: none;
   }
 
+  &__item {
+    @include hover(transform, scale(1.2));
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $c-white;
+
+      @include transiton-default(all);
+      transform: scale(0);
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
   &__link {
     font-size: 16px;
     line-height: 24px;
@@ -24,7 +46,7 @@
   &::after {
     position: absolute;
     left: 60px;
-    content: "0";
+    content: '0';
     width: 14px;
     height: 14px;
     background-color: #eb5757;
