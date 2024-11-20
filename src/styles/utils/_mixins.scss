@@ -47,5 +47,7 @@
 
   @include onDesktop {
     padding-inline: $padding-inline-desktop;
+    max-width: 1020px;
+    margin-inline: auto;
   }
 }
