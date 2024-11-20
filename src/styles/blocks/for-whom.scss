@@ -1,0 +1,50 @@
+.for-whom {
+  margin-top: 110px;
+
+  &__photo {
+    display: none;
+  }
+
+  &__adjective {
+    display: none;
+  }
+
+  &__slash-number {
+    position: relative;
+    left: -10px;
+  }
+
+  &__number {
+    margin: 0;
+    padding: 0;
+    padding-left: $padding-inline-mobile;
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    color: #000;
+    letter-spacing: 0.15em;
+
+    &::before {
+      content: '';
+      position: absolute;
+      transform-origin: 100% 0;
+      display: block;
+      height: 46px;
+      width: 1px;
+      transform: rotate(25deg);
+      background-color: $c-grey;
+    }
+  }
+
+  &__point-title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 24px;
+    color: $c-light-grey;
+  }
+  // margin-top: 150px;
+}
