@@ -1,3 +1,9 @@
 .main {
-@include contentPaddingInline;
+  @include contentPaddingInline;
+
+  &__container {
+    @include onTablet {
+      @include pageGrid;
+    }
+  }
 }

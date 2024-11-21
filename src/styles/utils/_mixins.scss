@@ -51,3 +51,14 @@
     margin-inline: auto;
   }
 }
+
+@mixin slash {
+  content: '';
+  position: absolute;
+  transform-origin: 100% 0;
+  display: block;
+  height: 46px;
+  width: 1px;
+  transform: rotate(25deg);
+  background-color: $c-grey;
+}
