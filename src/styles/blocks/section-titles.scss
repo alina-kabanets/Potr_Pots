@@ -36,9 +36,12 @@
   @include onTablet {
     @include pageGrid;
     margin-bottom: 110px;
-    // margin-bottom: 110px;
   }
-  
+
+  @include onDesktop {
+    margin-bottom: 110px;
+  }
+
   &--1 {
     @include onTablet {
       margin-bottom: 124px;
@@ -49,11 +52,23 @@
     @include onTablet {
       margin-bottom: 197px;
     }
+
+    @include onDesktop {
+      margin-top: 180px;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &--3 {
     @include onTablet {
       margin-bottom: 131px;
+    }
+
+    @include onDesktop {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

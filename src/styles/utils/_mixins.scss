@@ -43,12 +43,13 @@
 
   @include onTablet {
     padding-inline: $padding-inline-tablet;
+    min-width: 640px;
+    margin-inline: auto;
   }
 
   @include onDesktop {
     padding-inline: $padding-inline-desktop;
-    max-width: 1020px;
-    margin-inline: auto;
+    min-width: 1280px;
   }
 }
 
