@@ -7,41 +7,24 @@
   letter-spacing: 0.15em;
 
   @include onTablet {
-    margin-bottom: 42px;
     grid-column: span 2;
-  }
-
-  @include onDesktop {
-    margin-bottom: 34px;
   }
 }
 
 .point-article {
-  margin-bottom: 70px;
   grid-column: 1 / -1;
 
   @include onTablet {
     @include pageGrid;
-    margin-bottom: 110px;
-  }
-
-  @include onDesktop {
-    margin-bottom: 110px;
-  }
-
-  &--1 {
-    @include onTablet {
-      margin-bottom: 124px;
-    }
   }
 
   &--2 {
     @include onTablet {
-      margin-bottom: 197px;
+      margin-top: 124px;
     }
 
     @include onDesktop {
-      margin-top: 180px;
+      margin-top: 307px;
       display: flex;
       flex-direction: column;
     }
@@ -49,11 +32,11 @@
 
   &--3 {
     @include onTablet {
-      margin-bottom: 131px; // need change for top
+      margin-top: 197px;
     }
-
+    
     @include onDesktop {
-      margin-top: 80px;
+      margin-top: 202px;
       @include smallGrid;
     }
   }
