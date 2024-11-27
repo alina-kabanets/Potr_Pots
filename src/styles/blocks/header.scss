@@ -286,6 +286,14 @@ h2 {
     }
   }
 
+  &__right-side-decor {
+    display: none;
+    
+    @include onTablet {
+      display: contents;
+    }
+  }
+
   &__right-side-line {
     @include onTablet {
       position: absolute;

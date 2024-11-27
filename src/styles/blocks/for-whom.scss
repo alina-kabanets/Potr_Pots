@@ -1,4 +1,17 @@
 .for-whom {
+  &__container {
+    margin-top: 25px;
+
+    @include onTablet {
+      @include pageGrid;
+      margin-top: 42px;
+    }
+
+    @include onDesktop {
+      margin-top: 34px; 
+    }
+  }
+
   &__point-1 {
     @include onTablet {
       grid-row: 2;
@@ -223,6 +236,7 @@
 
     &--1 {
       @include onTablet {
+        margin: 0;
         left: 0;
         grid-row: 2;
         grid-column-start: 3;
@@ -238,6 +252,7 @@
 
     &--3 {
       @include onTablet {
+        margin-top: 18 px;
         left: 0;
         grid-row: 2;
         grid-column-start: 3;

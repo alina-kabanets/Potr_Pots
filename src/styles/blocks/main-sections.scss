@@ -5,10 +5,4 @@
   @include onDesktop {
     margin-top: 150px;
   }
-
-  &__container {
-    @include onTablet {
-      @include pageGrid;
-    }
-  }
 }

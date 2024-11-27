@@ -1,5 +1,4 @@
 .section-title {
-  margin-bottom: 25px;
   font-family: $font-bebas;
   font-size: 36px;
   line-height: 54px;
@@ -50,7 +49,7 @@
 
   &--3 {
     @include onTablet {
-      margin-bottom: 131px;
+      margin-bottom: 131px; // need change for top
     }
 
     @include onDesktop {
