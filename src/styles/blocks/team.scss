@@ -1,0 +1,36 @@
+.team {
+  margin-top: 110px;
+
+  &__title {
+    font-size: 58px;
+    line-height: 70px;
+  }
+
+  &__photo {
+    margin-top: 25px;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+  }
+
+  &__description {
+    margin-top: 30px;
+  }
+
+  &__about {
+    position: relative;
+  }
+
+  &__rect {
+    background-image: url(../images/mobile/Rectangle.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+    background-size: cover;
+    height: 294px;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+  }
+}
