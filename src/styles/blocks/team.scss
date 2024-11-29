@@ -1,9 +1,62 @@
 .team {
   margin-top: 110px;
 
+  @include onTablet {
+    position: relative;
+    @include pageGrid;
+    row-gap: 80px;
+  }
+
   &__title {
     font-size: 58px;
     line-height: 70px;
+
+    @include onTablet {
+      grid-row: 1;
+      grid-column-start: span 5;
+    }
+  }
+
+  &__martin {
+    visibility: hidden;
+
+    @include onTablet {
+      visibility: visible;
+      position: absolute;
+      left: -75px;
+      top: 60px;
+      margin-top: 17px;
+      font-family: $font-bebas;
+      font-weight: 400;
+      font-size: 232px;
+      line-height: 278px;
+      letter-spacing: 0.15em;
+      @include transparent-title;
+    }
+  }
+
+  &__andy {
+    visibility: hidden;
+
+    @include onTablet {
+      visibility: visible;
+      position: absolute;
+      right: -72px;
+      bottom: -168px;
+      font-family: $font-bebas;
+      font-weight: 400;
+      font-size: 219px;
+      line-height: 264px;
+      letter-spacing: 0.15em;
+      @include transparent-title;
+    }
+  }
+
+  &__picture {
+    @include onTablet {
+      grid-row: 3;
+      grid-column: span 3;
+    }
   }
 
   &__photo {
@@ -11,14 +64,30 @@
     width: calc(100% + 2 * $padding-inline-mobile);
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      margin: 0;
+      width: 340px;
+      height: 255px;
+    }
   }
 
   &__description {
     margin-top: 30px;
+
+    @include onTablet {
+      margin-top: 10px;
+    }
   }
 
   &__about {
     position: relative;
+
+    @include onTablet {
+      grid-row: 3;
+      grid-column: 1 / 4;
+      margin-top: 53px;
+    }
   }
 
   &__rect {
@@ -32,5 +101,11 @@
     width: calc(100% + 2 * $padding-inline-mobile);
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      background-image: url(../images/tablet/Rectangle.png);
+      top: -120px;
+      left: -152px;
+    }
   }
 }
