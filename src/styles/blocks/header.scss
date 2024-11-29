@@ -109,9 +109,8 @@ h2 {
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.15em;
-    -webkit-text-stroke: 0.7px $c-turquoise;
-    color: transparent;
     min-width: 260px;
+    @include transparent-title;
 
     // text-shadow:
     //   0.68px 0.68px 0 #03839e,
