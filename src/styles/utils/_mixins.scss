@@ -77,4 +77,8 @@
 @mixin transparent-title {
   -webkit-text-stroke: 0.8px $c-turquoise;
   color: transparent;
+
+  @include onDesktop {
+    -webkit-text-stroke: 1px $c-turquoise;
+  }
 }

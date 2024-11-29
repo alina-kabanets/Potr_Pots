@@ -7,6 +7,10 @@
     row-gap: 80px;
   }
 
+  @include onDesktop {
+    row-gap: 55px;
+  }
+
   &__title {
     font-size: 58px;
     line-height: 70px;
@@ -14,6 +18,11 @@
     @include onTablet {
       grid-row: 1;
       grid-column-start: span 5;
+    }
+
+    @include onDesktop {
+      grid-row: 1;
+      grid-column-start: span 6;
     }
   }
 
@@ -33,6 +42,13 @@
       letter-spacing: 0.15em;
       @include transparent-title;
     }
+    
+    @include onDesktop {
+      left: -52px;
+      top: 50px;
+      font-size: 288px;
+      line-height: 346px;
+    }
   }
 
   &__andy {
@@ -41,8 +57,8 @@
     @include onTablet {
       visibility: visible;
       position: absolute;
-      right: -72px;
-      bottom: -168px;
+      right: -68px;
+      bottom: -154px;
       font-family: $font-bebas;
       font-weight: 400;
       font-size: 219px;
@@ -50,12 +66,21 @@
       letter-spacing: 0.15em;
       @include transparent-title;
     }
+
+    @include onDesktop {
+      bottom: -216px;
+      right: -156px;
+    }
   }
 
   &__picture {
     @include onTablet {
       grid-row: 3;
       grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: 5 / -1; //?
     }
   }
 
@@ -70,13 +95,29 @@
       width: 340px;
       height: 255px;
     }
+
+    @include onDesktop {
+      width: 677px;
+      height: 507px;
+    }
+  }
+
+  &__about {
+    @include onDesktop {
+      @include pageGrid;
+    }
   }
 
   &__description {
     margin-top: 30px;
 
     @include onTablet {
-      margin-top: 10px;
+      margin-top: 6px;
+    }
+
+    @include onDesktop {
+      margin-top: 186px;
+      grid-column: 1 / -1;
     }
   }
 
@@ -105,7 +146,17 @@
     @include onTablet {
       background-image: url(../images/tablet/Rectangle.png);
       top: -120px;
-      left: -152px;
+      left: -154px;
+      height: 380px;
+    }
+
+    @include onDesktop {
+      background-image: url(../images/desktop/Rectangle.png);
+      top: -75px;
+      left: -96px;
+      width: 435px; 
+      height: 310px;
+      // overflow: hidden;
     }
   }
 }
