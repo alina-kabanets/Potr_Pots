@@ -1,0 +1,23 @@
+.materials {
+  &__title {
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: 0.15em;
+    color: $c-turquoise;
+  }
+
+  &__picture {
+  }
+
+  &__photo {
+    display: flex;
+    position: relative;
+    margin-top: -76px;
+    z-index: -1;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+  }
+}

@@ -1,0 +1,22 @@
+.sizes {
+  &__description {
+    margin-top: 20px;
+  }
+
+  &__point-title {
+    margin-top: 30px;
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-style: 18px;
+    line-height: 18px;
+    letter-spacing: 0.15em;
+    color: #000;
+  }
+
+  &__photo {
+    margin-top: 30px;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+  }
+}
