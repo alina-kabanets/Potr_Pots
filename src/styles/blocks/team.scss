@@ -1,6 +1,4 @@
 .team {
-  margin-top: 110px;
-
   @include onTablet {
     position: relative;
     @include pageGrid;

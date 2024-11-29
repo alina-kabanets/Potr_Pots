@@ -1,4 +1,6 @@
 .section-title {
+  margin-top: 110px;
+
   font-family: $font-bebas;
   font-size: 36px;
   line-height: 54px;
@@ -7,37 +9,11 @@
   letter-spacing: 0.15em;
 
   @include onTablet {
+    margin-top: 135px;
     grid-column: span 2;
   }
-}
 
-.point-article {
-  grid-column: 1 / -1;
-
-  @include onTablet {
-    @include pageGrid;
-  }
-
-  &--2 {
-    @include onTablet {
-      margin-top: 124px;
-    }
-
-    @include onDesktop {
-      margin-top: 307px;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &--3 {
-    @include onTablet {
-      margin-top: 197px;
-    }
-    
-    @include onDesktop {
-      margin-top: 202px;
-      @include smallGrid;
-    }
+  @include onDesktop {
+    margin-top: 150px;
   }
 }

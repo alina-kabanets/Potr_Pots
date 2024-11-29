@@ -1,14 +1,4 @@
 .features {
-  margin-top: 110px;
-
-  @include onTablet {
-    margin-top: 135px;
-  }
-
-  @include onDesktop {
-    margin-top: 150px;
-  }
-
   &__container {
     display: flex;
     flex-direction: column;
