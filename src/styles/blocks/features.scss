@@ -33,8 +33,7 @@
     font-weight: 400;
     line-height: 69px;
     letter-spacing: 0.15em;
-    -webkit-text-stroke: 0.7px $c-turquoise;
-    color: transparent;
+    @include transparent-title;
 
     &--solid {
       color: $c-turquoise;

@@ -12,6 +12,37 @@
     }
   }
 
+  .point-article {
+    grid-column: 1 / -1;
+  
+    @include onTablet {
+      @include pageGrid;
+    }
+  
+    &--2 {
+      @include onTablet {
+        margin-top: 124px;
+      }
+  
+      @include onDesktop {
+        margin-top: 307px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  
+    &--3 {
+      @include onTablet {
+        margin-top: 197px;
+      }
+      
+      @include onDesktop {
+        margin-top: 202px;
+        @include smallGrid;
+      }
+    }
+  }  
+
   &__point-1 {
     @include onTablet {
       grid-row: 2;

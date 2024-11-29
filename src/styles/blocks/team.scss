@@ -26,6 +26,7 @@
 
   &__martin {
     visibility: hidden;
+    display: none;
 
     @include onTablet {
       visibility: visible;
@@ -51,6 +52,7 @@
 
   &__andy {
     visibility: hidden;
+    display: none;
 
     @include onTablet {
       visibility: visible;
