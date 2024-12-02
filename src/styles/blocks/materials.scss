@@ -1,11 +1,16 @@
 .materials {
   position: relative;
+  margin-top: 180px;
 
   &__description {
     @include onTablet {
       margin-top: -50px;
       @include pageGrid;
       grid-column: 1 /-1;
+    }
+
+    @include onDesktop {
+      margin-top: -170px;
     }
   }
 
@@ -22,6 +27,11 @@
       line-height: 96px;
       letter-spacing: 0.12em;
     }
+
+    @include onDesktop {
+      font-size: 138px;
+      line-height: 166px;
+    }
   }
 
   &__subtitle {
@@ -32,12 +42,21 @@
     @include onTablet {
       grid-column: 4 / -1;
     }
+
+    @include onDesktop {
+      grid-column: 8 / 11;
+    }
   }
 
   &__text {
     @include onTablet {
       margin-top: 10px;
       grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      margin-top: 15px;
+      grid-column: 8 / -1;
     }
   }
 
@@ -76,6 +95,13 @@
       width: calc(100% + 2 * $padding-inline-tablet);
       margin-left: -$padding-inline-tablet;
       margin-right: -$padding-inline-tablet;
+    }
+
+    @include onDesktop {
+      width: calc(100% + 2 * $padding-inline-desktop);
+      margin-left: -$padding-inline-desktop;
+      margin-right: -$padding-inline-desktop;
+      margin-top: -180px;
     }
   }
 }
