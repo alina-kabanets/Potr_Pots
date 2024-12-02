@@ -30,9 +30,10 @@
 
     @include onTablet {
       visibility: visible;
+      display: block;
       position: absolute;
       left: -75px;
-      top: 60px;
+      top: 200px;
       margin-top: 17px;
       font-family: $font-bebas;
       font-weight: 400;
@@ -44,7 +45,6 @@
     
     @include onDesktop {
       left: -52px;
-      top: 50px;
       font-size: 288px;
       line-height: 346px;
     }
@@ -56,9 +56,10 @@
 
     @include onTablet {
       visibility: visible;
+      display: block;
       position: absolute;
       right: -68px;
-      bottom: -154px;
+      bottom: -158px;
       font-family: $font-bebas;
       font-weight: 400;
       font-size: 219px;
@@ -156,7 +157,6 @@
       left: -96px;
       width: 435px; 
       height: 310px;
-      // overflow: hidden;
     }
   }
 }
