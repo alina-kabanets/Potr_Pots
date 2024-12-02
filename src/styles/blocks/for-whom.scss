@@ -8,67 +8,50 @@
     }
 
     @include onDesktop {
-      margin-top: 34px; 
+      margin-top: 34px;
     }
   }
 
-  .point-article {
+  &__point {
     grid-column: 1 / -1;
-  
+
     @include onTablet {
       @include pageGrid;
     }
-  
+
+    &--1 {
+      @include onTablet {
+        grid-row: 2;
+      }
+    }
+
     &--2 {
       @include onTablet {
         margin-top: 124px;
+        grid-row: 3;
       }
-  
+
       @include onDesktop {
         margin-top: 307px;
         display: flex;
         flex-direction: column;
+        grid-column-start: 2;
+        grid-column-end: span 4;
       }
     }
-  
+
     &--3 {
       @include onTablet {
         margin-top: 197px;
+        grid-row: 4;
       }
-      
+
       @include onDesktop {
         margin-top: 202px;
         @include smallGrid;
+        grid-row: 3;
+        grid-column-start: 8;
       }
-    }
-  }  
-
-  &__point-1 {
-    @include onTablet {
-      grid-row: 2;
-    }
-  }
-
-  &__point-2 {
-    @include onTablet {
-      grid-row: 3;
-    }
-
-    @include onDesktop {
-      grid-column-start: 2;
-      grid-column-end: span 4;
-    }
-  }
-
-  &__point-3 {
-    @include onTablet {
-      grid-row: 4;
-    }
-
-    @include onDesktop {
-      @include smallGrid;
-      grid-row: 3;
-      grid-column-start: 8;
     }
   }
 
@@ -160,7 +143,7 @@
       position: absolute;
     }
 
-    &-2 {
+    &--2 {
       @include onTablet {
         display: block;
         position: absolute;
@@ -172,7 +155,7 @@
       }
     }
 
-    &-3 {
+    &--3 {
       @include onDesktop {
         display: block;
         position: static;
