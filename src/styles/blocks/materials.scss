@@ -1,4 +1,14 @@
 .materials {
+  position: relative;
+
+  &__description {
+    @include onTablet {
+      margin-top: -50px;
+      @include pageGrid;
+      grid-column: 1 /-1;
+    }
+  }
+
   &__title {
     font-family: $font-bebas;
     font-weight: 400;
@@ -6,9 +16,51 @@
     line-height: 70px;
     letter-spacing: 0.15em;
     color: $c-turquoise;
+
+    @include onTablet {
+      font-size: 80px;
+      line-height: 96px;
+      letter-spacing: 0.12em;
+    }
   }
 
-  &__picture {
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+  }
+
+  &__text {
+    @include onTablet {
+      margin-top: 10px;
+      grid-column: 4 / -1;
+    }
+  }
+
+  &__right-side-decor-text {
+    @include onTablet {
+      top: 0;
+      right: -24px;
+    }
+
+    @include onDesktop {
+     display: none;
+    }
+  }
+
+  &__left-side-decor-text {
+    @include onTablet {
+      top: 230px;
+      left: -24px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &__photo {
@@ -19,5 +71,11 @@
     width: calc(100% + 2 * $padding-inline-mobile);
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      width: calc(100% + 2 * $padding-inline-tablet);
+      margin-left: -$padding-inline-tablet;
+      margin-right: -$padding-inline-tablet;
+    }
   }
 }
