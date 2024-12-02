@@ -68,7 +68,7 @@ h2 {
       align-items: end;
       text-align: end;
       padding: 0;
-  
+
       gap: 60px;
       list-style: none;
     }
@@ -285,56 +285,13 @@ h2 {
     }
   }
 
-  &__right-side-decor {
-    display: none;
-    
+  &__right-side-decor-text {
     @include onTablet {
-      display: contents;
-    }
-  }
-
-  &__right-side-line {
-    @include onTablet {
-      position: absolute;
-      bottom: -55px;
-      right: 14px;
-      background-image: url(../images/tablet/right-side-decor.png);
-      background-repeat: no-repeat;
-      width: 1px;
-      height: 65px;
-    }
-
-    @include onDesktop {
-      position: absolute;
-      bottom: -255px;
-      right: 135px;
-      background-image: url(../images/tablet/right-side-decor.png);
-      background-repeat: no-repeat;
-      width: 1px;
-      height: 65px;
-    }
-  }
-
-  &__right-side-text {
-    opacity: 0;
-    font-family: $font-bebas;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.4px;
-    color: #828282;
-    text-decoration: none;
-    writing-mode: vertical-lr;
-
-    @include onTablet {
-      opacity: 1;
-      position: absolute;
       bottom: -100px;
       right: -4px;
     }
 
     @include onDesktop {
-      opacity: 1;
-      position: absolute;
       bottom: -305px;
       right: 118px;
     }
