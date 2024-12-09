@@ -210,26 +210,7 @@ h2 {
 
   &__buy-now-button {
     grid-column: 1 / -1;
-    box-sizing: border-box;
-    color: $c-black;
-    text-transform: uppercase;
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 21px;
-    height: 48px;
-    font-weight: 600;
-    background-color: $c-yellow;
-    border: none;
-    padding: 0;
-
-    &:hover {
-      opacity: 70%;
-    }
-
-    &::after {
-      content: url(../images/mobile/button-arrow.png);
-      padding-left: 22px;
-    }
+    @include buy-now-button;
 
     @include onTablet {
       grid-column: 2 / 4;
