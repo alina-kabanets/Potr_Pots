@@ -35,11 +35,13 @@
   }
 
   &__subtitle {
+    display: none;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 
     @include onTablet {
+      display: block;
       grid-column: 4 / -1;
     }
 
@@ -49,7 +51,10 @@
   }
 
   &__text {
+    display: none;
+
     @include onTablet {
+      display: block;
       margin-top: 10px;
       grid-column: 4 / -1;
     }
@@ -83,7 +88,6 @@
   }
 
   &__photo {
-    display: flex;
     position: relative;
     margin-top: -76px;
     z-index: -1;

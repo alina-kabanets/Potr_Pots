@@ -70,7 +70,11 @@
   }
 
   &__text-notice {
-    margin-top: 190px;
+    margin-top: 15px;
+
+    @include onTablet {
+      margin-top: 190px;
+    }
 
     @include onDesktop {
       margin-top: 109px;
