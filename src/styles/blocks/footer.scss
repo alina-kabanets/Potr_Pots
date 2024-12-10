@@ -1,0 +1,41 @@
+.footer {
+  margin-top: 102px;
+  padding-inline: $padding-inline-mobile;
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__icon {
+    display: block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+
+    &--twitter {
+      background-image: url(../images/mobile/twitter-icon.png);
+    }
+
+    &--instagram {
+      background-image: url(../images/mobile/instagram-icon.png);
+    }
+
+    &--fb {
+      background-image: url(../images/mobile/fb-icon.png);
+    }
+  }
+
+  &__logo {
+    margin-top: 40px;
+    display: block;
+    color: #000;
+    line-height: 54px;
+  }
+
+  &__copyright {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+  }
+}

@@ -7,6 +7,19 @@ h2 {
   // max-width: 1020px;
 }
 
+.logo {
+  text-decoration: none;
+  font-family: $font-bebas;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.06em;
+  color: $c-grey;
+  text-align: center;
+
+  @include hover(transform, scale(1.2));
+}
+
 .header {
   // height: 100vh;
 
@@ -37,19 +50,6 @@ h2 {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-  }
-
-  &__logo {
-    text-decoration: none;
-    font-family: $font-bebas;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0.06em;
-    color: $c-grey;
-    text-align: center;
-
-    @include hover(transform, scale(1.2));
   }
 
   &__nav {
