@@ -39,7 +39,7 @@
         <div class="header__top">
           <a
             href="#"
-            class="header__logo"
+            class="header__logo logo"
           >
             Potr Pots
           </a>
@@ -72,7 +72,7 @@
               </li>
               <li class="header__item">
                 <a
-                  href="#message-us"
+                  href="#contacts"
                   class="header__link"
                 >
                   Message us
@@ -175,7 +175,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#message-us"
+                href="#contacts"
                 class="nav__link"
               >
                 Message us
@@ -580,13 +580,81 @@
       </section>
 
       <section
-        class="message-us"
-        id="message-us"
+        class="contacts"
+        id="contacts"
       >
-        <h2 class="section-title">have any questions?</h2>
+        <div class="contacts__rect"></div>
+        <div class="contacts__round-decor"></div>
+
+        <h2 class="section-title contacts__title">have any questions?</h2>
+        <p class="contacts__ways">Here few ways to get in touch with us:</p>
+
+        <form
+          action="#"
+          method="POST"
+          class="contacts__form"
+        >Message us
+          <input
+            type="text"
+            placeholder="Name"
+            class="contacts__input contacts__input-name"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="contacts__input contacts__input-email"
+          />
+          <input
+          type="text"
+          placeholder="Message"
+          class="contacts__input contacts__input-message"
+        />
+
+          <button
+            type="submit"
+            class="contacts__submit-button"
+          >
+            Submit
+          </button>
+        </form>
+
+        <h5 class="contacts__point-title">Our phone</h5>
+        <p class="contacts__details">(270) 555-0117</p>
+
+        <h5 class="contacts__point-title">Our email</h5>
+        <p class="contacts__details">potrpots@gmail.com</p>
+
+        <h5 class="contacts__point-title">Our office</h5>
+        <p class="contacts__details">
+          United Kingdom 99 Staple Hill Road, Bristol, BS16 5AD
+        </p>
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__social">
+        <a
+          href="#twitter-icon"
+          class="footer__twitter"
+        ></a>
+        <a
+          href="#instagram-icon"
+          class="footer__instagram"
+        ></a>
+        <a
+          href="#fb-icon"
+          class="footer__fb"
+        ></a>
+      </div>
+
+      <a
+        href="#"
+        class="footer__logo logo"
+      >
+        Potr Pots
+      </a>
+      <p class="footer__copyright">Copyright © 2019</p>
+    </footer>
   </body>
 </html>

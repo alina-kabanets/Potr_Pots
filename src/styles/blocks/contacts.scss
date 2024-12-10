@@ -1,0 +1,95 @@
+.contacts {
+  position: relative;
+  // @include pageGrid;
+
+  &__title {
+    padding-top: 45px;
+    color: #000;
+  }
+
+  &__ways {
+    color: #000;
+  }
+
+  &__rect {
+    position: absolute;
+    z-index: -2;
+    background-image: url(../images/mobile/rectangle-contacts.png);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+  }
+
+  &__round-decor {
+    position: absolute;
+    top: -9%;
+    right: -54%;
+    background-image: url(../images/mobile/round-decor.png);
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 100%;
+  }
+
+  &__form {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+  }
+
+  &__input {
+    margin-top: 20px;
+    padding-bottom: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    color: $c-light-grey;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__message {
+    width: 100%;
+    background-color: $c-yellow;
+    font-family: 'Manrope', sans-serif;
+    color: $c-light-grey;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__submit-button {
+    @include buy-now-button;
+    width: 100%;
+    margin-top: 30px;
+    background-color: $c-turquoise;
+    color: #fff;
+
+    &::after {
+      content: url(../images/mobile/arrow-white.png);
+    }
+  }
+
+  &__point-title:first-of-type {
+    margin-top: 56px;
+  }
+
+  &__point-title {
+    margin-top: 34px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 39%;
+  }
+
+  &__details {
+    margin-top: 5px;
+    color: #000;
+  }
+}
