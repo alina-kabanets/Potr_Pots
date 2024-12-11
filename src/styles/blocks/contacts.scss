@@ -1,14 +1,29 @@
 .contacts {
   position: relative;
-  // @include pageGrid;
+
+  @include onTablet {
+    margin-top: 103px;
+    @include pageGrid;
+  }
 
   &__title {
     padding-top: 45px;
     color: #000;
+
+    @include onTablet {
+      margin: 0;
+      padding-top: 17px;
+      grid-column: 1 / 4;
+      grid-row: 1;
+    }
   }
 
   &__ways {
     color: #000;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
   }
 
   &__rect {
@@ -20,6 +35,16 @@
     width: calc(100% + 2 * $padding-inline-mobile);
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      background-image: url(../images/tablet/footer-rect.png);
+      height: 552px;
+      width: calc(100% + 2 * $padding-inline-tablet);
+      margin-left: -$padding-inline-tablet;
+      margin-right: -$padding-inline-tablet;
+      // left: 0;
+      // right: 0;
+    }
   }
 
   &__round-decor {
@@ -30,6 +55,11 @@
     background-repeat: no-repeat;
     height: 170px;
     width: 100%;
+
+    @include onTablet {
+      top: -28%;
+      right: -85%;
+    }
   }
 
   &__form {
@@ -37,6 +67,17 @@
     font-size: 24px;
     line-height: 36px;
     color: #000;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+      margin-top: 30px;
+    }
+  }
+
+  &__info {
+    @include onTablet {
+      grid-column: 5 / -1;
+    }
   }
 
   &__input {
@@ -73,10 +114,20 @@
     &::after {
       content: url(../images/mobile/arrow-white.png);
     }
+
+    @include onTablet {
+      grid-column-start: span 2;
+      width: 220px;
+      margin-top: 40px;
+    }
   }
 
   &__point-title:first-of-type {
     margin-top: 56px;
+
+    @include onTablet {
+      margin-top: 0;
+    }
   }
 
   &__point-title {
@@ -86,6 +137,10 @@
     font-size: 24px;
     line-height: 36px;
     opacity: 39%;
+
+    @include onTablet {
+      margin-top: 20px;
+    }
   }
 
   &__details {
