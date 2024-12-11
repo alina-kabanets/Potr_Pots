@@ -6,6 +6,10 @@
     @include pageGrid;
   }
 
+  @include onDesktop {
+    margin-top: 200px;
+  }
+
   &__title {
     padding-top: 45px;
     color: #000;
@@ -14,7 +18,11 @@
       margin: 0;
       padding-top: 17px;
       grid-column: 1 / 4;
-      grid-row: 1;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+      padding-top: 42px;
     }
   }
 
@@ -22,7 +30,7 @@
     color: #000;
 
     @include onTablet {
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
     }
   }
 
@@ -42,23 +50,33 @@
       width: calc(100% + 2 * $padding-inline-tablet);
       margin-left: -$padding-inline-tablet;
       margin-right: -$padding-inline-tablet;
-      // left: 0;
-      // right: 0;
+    }
+
+    @include onDesktop {
+      background-image: url(../images/desktop/footer-rect.png);
+      width: calc(100% + 2 * $padding-inline-desktop);
+      margin-left: -$padding-inline-desktop;
+      margin-right: -$padding-inline-desktop;
     }
   }
 
   &__round-decor {
     position: absolute;
     top: -9%;
-    right: -54%;
-    background-image: url(../images/mobile/round-decor.png);
+    right: -70%;
+    background-image: url(../images/desktop/round-decor.png);
     background-repeat: no-repeat;
     height: 170px;
     width: 100%;
 
     @include onTablet {
       top: -28%;
-      right: -85%;
+      right: -88%;
+    }
+
+    @include onDesktop {
+      top: -25%;
+      right: -92%;
     }
   }
 
@@ -72,11 +90,20 @@
       grid-column: 1 / 4;
       margin-top: 30px;
     }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+    }
   }
 
   &__info {
     @include onTablet {
+      margin-top: -14px;
       grid-column: 5 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / 10;
     }
   }
 
