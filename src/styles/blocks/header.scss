@@ -238,10 +238,15 @@ h2 {
     background-repeat: no-repeat;
     width: 10px;
     height: 44px;
+    @include transiton-default(bottom);
 
     @include onTablet {
       left: 35px;
       bottom: -45px;
+
+      &:hover {
+        bottom: -60px;
+      }
     }
 
     @include onDesktop {
