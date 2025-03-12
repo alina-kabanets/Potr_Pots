@@ -1,0 +1,199 @@
+.questions {
+  position: relative;
+
+  @include onTablet {
+    margin-top: 103px;
+    @include pageGrid;
+  }
+
+  @include onDesktop {
+    margin-top: 200px;
+  }
+
+  &__title {
+    padding-top: 45px;
+    color: #000;
+
+    @include onTablet {
+      margin: 0;
+      padding-top: 17px;
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+      padding-top: 42px;
+    }
+  }
+
+  &__ways {
+    color: #000;
+
+    @include onTablet {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__rect {
+    position: absolute;
+    // padding-inline: -30px;
+
+    z-index: -2;
+    background-image: url(../images/mobile/rectangle-contacts.png);
+    background-repeat: no-repeat;
+    height: 1000px;
+    // height: 100%;
+    // width: 100%;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      background-image: url(../images/tablet/footer-rect.png);
+      height: 552px;
+      width: calc(100% + 2 * $padding-inline-tablet);
+      margin-left: -$padding-inline-tablet;
+      margin-right: -$padding-inline-tablet;
+    }
+
+    @include onDesktop {
+      background-image: url(../images/desktop/footer-rect.png);
+      // width: calc(100% + 2 * $padding-inline-desktop);
+      width: 100%;
+      margin-left: -$padding-inline-desktop;
+      // margin-right: 0;
+      // margin-right: -$padding-inline-desktop;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -9%;
+      // right: -$padding-inline-mobile;
+      right: 0;
+      background-image: url(../images/mobile/round-decor.png);
+      background-repeat: no-repeat;
+      // z-index: 4;
+      height: 170px;
+      width: 161px;
+      // width: 100vw;
+      // height: 100%;
+
+      @include onTablet {
+        top: -90px;
+        // right: -$padding-inline-tablet;
+        // right: 0;
+      }
+
+      @include onDesktop {
+        // top: -90px;
+        // right: 3%;
+        // right: 0;
+        // transform: translate(-30%);
+        // right: -$padding-inline-desktop;
+        // right: -7%;
+        // right: -320%;
+
+        // right: -80px; // ???
+        // right: calc($padding-inline-desktop + 54px);
+        background-image: url(../images/desktop/round-decor.png);
+        // background-position: top 100px left 140px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+      margin-top: 30px;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__info {
+    @include onTablet {
+      margin-top: -14px;
+      grid-column: 5 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / 10;
+    }
+  }
+
+  &__input {
+    margin-top: 20px;
+    padding-bottom: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    color: $c-light-grey;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__message {
+    width: 100%;
+    background-color: $c-yellow;
+    font-family: 'Manrope', sans-serif;
+    color: $c-light-grey;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__submit-button {
+    @include buy-now-button;
+    width: 100%;
+    margin-top: 30px;
+    background-color: $c-turquoise;
+    color: #fff;
+
+    &::after {
+      content: url(../images/mobile/arrow-white.png);
+    }
+
+    @include onTablet {
+      grid-column-start: span 2;
+      width: 220px;
+      margin-top: 40px;
+    }
+  }
+
+  &__point-title:first-of-type {
+    margin-top: 56px;
+
+    @include onTablet {
+      margin-top: 0;
+    }
+  }
+
+  &__point-title {
+    margin-top: 34px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 39%;
+
+    @include onTablet {
+      margin-top: 20px;
+    }
+  }
+
+  &__details {
+    margin-top: 5px;
+    color: #000;
+  }
+}

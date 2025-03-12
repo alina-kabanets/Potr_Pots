@@ -1,0 +1,121 @@
+.POTR-size {
+  @include onDesktop {
+    position: relative;
+    @include pageGrid;
+    grid-column: 1 / -1;
+  }
+
+  &__title {
+    margin-top: 110px;
+
+    @include onDesktop {
+      grid-column: 1 / 9;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+
+    @include onDesktop {
+      margin-top: 66px;
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+  }
+
+  &__points {
+    @include onTablet {
+      // @include smallGrid;
+      grid-column: 1 / -1;
+    }
+
+    @include onDesktop {
+      grid-row: 2;
+      // grid-column-start: span 9;
+      grid-column: 4 / 7;
+    }
+  }
+
+  &__point-title {
+    margin-top: 38px;
+    font-family: $font-bebas;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.15em;
+    color: #000;
+
+    @include onTablet {
+      grid-column: 1 / 2;
+    }
+
+    @include onDesktop {
+      margin-top: 66px;
+    }
+
+    &--small {
+      @include onDesktop {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &__text {
+    @include onTablet {
+      // grid-column: 1 / 3;
+      width: 246px;
+    }
+
+    @include onDesktop {
+      margin-top: 10px;
+      // grid-column: 1 / 3;
+      // margin-right: 10px;
+    }
+  }
+
+  &__text-notice {
+    margin-top: 15px;
+
+    @include onTablet {
+      margin-top: 190px;
+    }
+
+    @include onDesktop {
+      margin-top: 109px;
+      grid-row: 3;
+      grid-column: 1 / 7;
+    }
+  }
+
+  &__picture {
+    @include onDesktop {
+      // margin-right: -$padding-inline-desktop;
+      // padding: 0;
+      position: static;
+      grid-row: 2;
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__photo {
+    margin-top: 30px;
+    width: calc(100% + 2 * $padding-inline-mobile);
+    margin-left: -$padding-inline-mobile;
+    margin-right: -$padding-inline-mobile;
+
+    @include onTablet {
+      margin: 38px 0 0;
+      position: absolute;
+      right: $padding-inline-tablet;
+      width: 416px;
+      height: 337px;
+    }
+
+    @include onDesktop {
+      width: 528px;
+      height: 427px;
+      right: 0;
+      // top: 166px;
+    }
+  }
+}
