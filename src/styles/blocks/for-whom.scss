@@ -67,6 +67,7 @@
       grid-row: 3;
       grid-column-start: 4;
       grid-column-end: span 3;
+      z-index: 2;
     }
 
     @include onDesktop {
@@ -310,6 +311,7 @@
       grid-column-start: 4;
       grid-column-end: span 3;
       grid-row: 4;
+      z-index: 2;
     }
 
     @include onDesktop {
