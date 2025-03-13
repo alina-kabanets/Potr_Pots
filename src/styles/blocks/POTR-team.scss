@@ -20,7 +20,7 @@
 
     @include onDesktop {
       grid-row: 1;
-      grid-column-start: span 7 ;
+      grid-column-start: span 7;
     }
   }
 
@@ -91,6 +91,7 @@
       margin: 0;
       width: 340px;
       height: 255px;
+      @include hover(transform, scale(1.02));
     }
 
     @include onDesktop {

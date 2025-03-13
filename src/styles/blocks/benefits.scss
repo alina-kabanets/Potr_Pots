@@ -106,6 +106,7 @@
       grid-column: 4 / 6;
       background-color: transparent;
       border: 1px solid $c-turquoise;
+      @include hover(transform, scale(1.05));
     }
 
     @include onDesktop {
@@ -167,6 +168,7 @@
     @include onTablet {
       top: 0;
       right: -24px;
+      @include hover(transform, scale(1.1));
     }
 
     @include onDesktop {

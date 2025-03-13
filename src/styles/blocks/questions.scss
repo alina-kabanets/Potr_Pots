@@ -168,6 +168,7 @@
       grid-column-start: span 2;
       width: 220px;
       margin-top: 40px;
+      @include hover(transform, scale(1.05));
     }
   }
 
@@ -195,5 +196,6 @@
   &__details {
     margin-top: 5px;
     color: #000;
+    cursor: pointer;
   }
 }

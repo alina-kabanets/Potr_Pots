@@ -69,6 +69,7 @@
     @include onTablet {
       top: 0;
       right: -24px;
+      @include hover(transform, scale(1.1));
     }
 
     @include onDesktop {
@@ -80,6 +81,7 @@
     @include onTablet {
       top: 230px;
       left: -24px;
+      @include hover(transform, scale(1.1));
     }
 
     @include onDesktop {

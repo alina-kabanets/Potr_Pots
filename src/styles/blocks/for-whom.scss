@@ -140,6 +140,7 @@
     @include onTablet {
       display: block;
       position: absolute;
+      @include hover(transform, scale(1.02));
     }
 
     &--2 {

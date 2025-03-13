@@ -2,6 +2,7 @@
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
+    cursor: pointer;
   }
 }
 
@@ -101,7 +102,7 @@
   padding: 0;
 
   &:hover {
-    opacity: 70%;
+    opacity: 80%;
   }
 
   &::after {

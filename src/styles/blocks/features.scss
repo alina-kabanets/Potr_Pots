@@ -1,6 +1,6 @@
 .features {
   &__container {
-     display: flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
 
@@ -24,6 +24,12 @@
 
     @include onDesktop {
       margin-top: 74px;
+    }
+  }
+
+  &__photo {
+    @include onTablet {
+      @include hover(transform, scale(1.02));
     }
   }
 

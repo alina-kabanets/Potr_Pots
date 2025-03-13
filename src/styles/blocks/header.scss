@@ -136,11 +136,13 @@ h2 {
       position: absolute;
       right: 0;
       top: 0;
-      z-index: -1;
+      // z-index: -1;
       padding-bottom: 0;
       height: 306px;
       width: 306px;
       margin: 0;
+
+      @include hover(transform, scale(1.02));
     }
 
     @include onDesktop {
@@ -195,6 +197,7 @@ h2 {
   &__buy-now-button {
     grid-column: 1 / -1;
     @include buy-now-button;
+    @include hover(transform, scale(1.05));
 
     @include onTablet {
       grid-column: 2 / 4;
@@ -222,6 +225,7 @@ h2 {
     @include onTablet {
       left: 30px;
       bottom: 10px;
+      @include hover(transform, scale(1.02));
     }
 
     @include onDesktop {
@@ -256,6 +260,8 @@ h2 {
   }
 
   &__right-side-decor-text {
+    @include hover(transform, scale(1.2));
+
     @include onTablet {
       bottom: -100px;
       right: 8px;
