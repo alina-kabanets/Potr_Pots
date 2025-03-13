@@ -13,6 +13,7 @@ const swiper = new Swiper(".swiper", {
   modules: [Pagination],
   direction: 'horizontal',
   loop: true,
+  spaceBetween: 8,
 
   pagination: {
     el: ".swiper-pagination",
