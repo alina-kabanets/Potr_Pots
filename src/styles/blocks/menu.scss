@@ -7,7 +7,7 @@
   opacity: 0;
   pointer-events: none;
   transform: translateX($menu-width);
-  
+
   @include transiton-default(all);
 
   &:target {
@@ -53,7 +53,7 @@
 .side-close {
   position: absolute;
   bottom: 40px;
-  right: 12px;
+  right: 102px;
   display: flex;
   flex-direction: column;
   justify-content: start;
