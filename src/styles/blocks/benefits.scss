@@ -106,7 +106,17 @@
       grid-column: 4 / 6;
       background-color: transparent;
       border: 1px solid $c-turquoise;
-      @include hover(transform, scale(1.05));
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: $c-turquoise;
+        opacity: 1;
+        color: $c-white;
+
+        &::after {
+          content: url(../images/tablet/Arrow-white.png);
+        }
+      }
     }
 
     @include onDesktop {
