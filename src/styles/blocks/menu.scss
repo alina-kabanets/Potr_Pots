@@ -32,7 +32,7 @@
   @include hover(transform, scale(1.2));
 
   @include onDesktop {
-    background-image: url(../images/desktop/basket-logo.png);
+    display: none;
   }
 }
 
