@@ -103,7 +103,8 @@
         <h2 class="header__title">
           POTR ~ Eco,
           <br />
-          self-<span class="header__title--solid">watering, origami</span>
+          self-
+          <span class="header__title--solid">watering, origami</span>
           plant
           <br />
           <span class="header__title--solid">pots</span>
@@ -119,9 +120,7 @@
           href="#for-whom"
           class="header__side-text"
         >
-          <p class="header__left-side-decor-text">
-            More about POTR POTS
-          </p>
+          <p class="header__left-side-decor-text">More about POTR POTS</p>
         </a>
         <a
           href="#for-whom"
@@ -702,6 +701,7 @@
             type="text"
             placeholder="Name"
             class="questions__input questions__input-name"
+            required
           />
           <input
             type="email"
@@ -709,11 +709,12 @@
             required
             class="questions__input questions__input-email"
           />
-          <input
+          <textarea
             type="text"
             placeholder="Message"
             class="questions__input questions__input-message"
-          />
+            required
+          ></textarea>
 
           <button
             type="submit"

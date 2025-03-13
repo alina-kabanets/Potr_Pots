@@ -75,3 +75,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+const form = document.querySelector('.questions__form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  e.target.reset();
+});
