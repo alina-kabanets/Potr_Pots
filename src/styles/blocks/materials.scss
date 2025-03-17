@@ -265,7 +265,7 @@
     line-height: 150%;
     z-index: 4;
 
-    @include onTablet {
+    @include onDesktop {
       padding: 35px 45px;
     }
 
@@ -273,7 +273,7 @@
       bottom: 20%;
       left: -4%;
 
-      @include onTablet {
+      @include onDesktop {
         bottom: 20%;
         left: 0;
       }
@@ -283,7 +283,7 @@
       bottom: 36%;
       left: 14%;
 
-      @include onTablet {
+      @include onDesktop {
         bottom: 36%;
         left: 13%;
       }
@@ -293,7 +293,7 @@
       bottom: 16%;
       right: 30%;
 
-      @include onTablet {
+      @include onDesktop {
         bottom: 5%;
         right: 55%;
       }
@@ -303,7 +303,7 @@
       bottom: 26%;
       left: 40%;
 
-      @include onTablet {
+      @include onDesktop {
         bottom: 28%;
         left: 50%;
       }
@@ -313,7 +313,7 @@
       top: 66%;
       right: 2%;
 
-      @include onTablet {
+      @include onDesktop {
         top: 72%;
         left: 72%;
       }
