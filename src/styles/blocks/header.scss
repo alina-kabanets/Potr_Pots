@@ -2,11 +2,6 @@ h2 {
   margin: 0;
 }
 
-.page__body {
-  min-width: 320px;
-  // max-width: 1020px;
-}
-
 .logo {
   text-decoration: none;
   font-family: $font-bebas;
@@ -79,20 +74,23 @@ h2 {
   }
 
   &__rect {
+    display: none;
+
     @include onTablet {
+      display: inline-block;
       position: absolute;
       top: 0;
-      right: 0;
       left: 0;
-      z-index: -2;
-      background-image: url(../images/tablet/Rectangle.png);
-      background-repeat: no-repeat;
-      height: 466px;
-      width: 100%;
+      z-index: -1;
+      border-left: 85vw solid $c-light-yellow;
+      border-bottom: 180px solid transparent;
+      height: 335px;
     }
 
     @include onDesktop {
-      background-image: url(../images/desktop/Rectangle.png);
+      height: 476px;
+      border-left: 71vw solid $c-light-yellow;
+      border-bottom: 270px solid transparent;
     }
   }
 

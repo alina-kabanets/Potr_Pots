@@ -130,33 +130,29 @@
   }
 
   &__rect {
-    background-image: url(../images/mobile/team-rect.png);
-    background-repeat: no-repeat;
+    display: block;
     position: absolute;
     top: 100px;
-    // left: 0;
-    // right: 0;
+    left: -$padding-inline-mobile;
+    right: -$padding-inline-mobile;
     z-index: -1;
-    background-size: cover;
-    height: 294px;
-    width: calc(100% + 2 * $padding-inline-mobile);
-    // width: 100%;
-    margin-left: -$padding-inline-mobile;
-    margin-right: -$padding-inline-mobile;
+    border-left: 100vw solid $c-light-yellow;
+    border-bottom: 80px solid transparent;
+    height: 290px;
 
     @include onTablet {
-      background-image: url(../images/tablet/Rectangle.png);
       top: -120px;
-      left: -154px;
-      height: 380px;
+      left: -48px;
+      border-left: 35vw solid $c-light-yellow;
+      height: 240px;
     }
 
     @include onDesktop {
-      background-image: url(../images/desktop/Rectangle.png);
+      border-left: 29vw solid $c-light-yellow;
+      border-bottom: 140px solid transparent;
+      height: 305px;
       top: -75px;
-      left: -96px;
-      width: 435px;
-      height: 310px;
+      left: -132px;
     }
   }
 }
