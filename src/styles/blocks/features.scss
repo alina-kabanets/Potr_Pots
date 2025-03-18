@@ -8,6 +8,7 @@
       flex-direction: row;
       justify-content: space-between;
       text-align: start;
+      min-width: 0;
     }
 
     @include onDesktop {
@@ -20,6 +21,8 @@
 
     @include onTablet {
       margin-top: 52px;
+      min-width: 0;
+      padding-inline: 10px;
     }
 
     @include onDesktop {
@@ -30,12 +33,13 @@
   &__photo {
     @include onTablet {
       @include hover(transform, scale(1.02));
+      max-width: 100%;
     }
   }
 
   &__title {
     font-family: $font-bebas;
-    font-size: 56px; //58?
+    font-size: 56px;
     font-weight: 400;
     line-height: 69px;
     letter-spacing: 0.15em;
@@ -61,6 +65,7 @@
 
     @include onTablet {
       width: 220px;
+      max-width: 100%;
     }
 
     @include onDesktop {
