@@ -3,6 +3,7 @@
 
   @include onTablet {
     margin-top: 103px;
+
     @include pageGrid;
   }
 
@@ -36,8 +37,9 @@
 
   &__rect {
     position: absolute;
-    display: block;
+
     left: -$padding-inline-mobile;
+    display: block;
     z-index: -1;
     height: 1002px;
     border-left: 100vw solid $c-light-yellow;
