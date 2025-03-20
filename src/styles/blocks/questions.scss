@@ -37,13 +37,14 @@
 
   &__rect {
     position: absolute;
-
     left: -$padding-inline-mobile;
-    display: block;
+
     z-index: -1;
+    display: block;
+
     height: 1002px;
-    border-left: 100vw solid $c-light-yellow;
     border-bottom: 70px solid transparent;
+    border-left: 100vw solid $c-light-yellow;
 
     @include onTablet {
       left: -$padding-inline-tablet;
@@ -54,21 +55,26 @@
     @include onDesktop {
       left: -$padding-inline-desktop;
       height: 567px;
-      border-left: 90vw solid $c-light-yellow;
       border-bottom: 180px solid transparent;
+      border-left: 90vw solid $c-light-yellow;
     }
 
     &::after {
       content: '';
+
       position: absolute;
       top: 0;
       right: 0;
-      height: 170px;
+
       width: 160px;
+      height: 170px;
+
       background-image: url(../images/desktop/round-decor.png);
-      background-repeat: no-repeat;
-      box-sizing: border-box;
+
       transform: translate(50%, -50%) rotate(0deg);
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+
       animation: circle 30s linear infinite;
 
       @keyframes circle {
@@ -114,14 +120,16 @@
     width: 100%;
     margin-top: 20px;
     padding-bottom: 4px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
+
+    font-family: "Manrope", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
-    color: $c-light-grey;
-    background-color: transparent;
+
     border: none;
+    background-color: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: $c-light-grey;
 
     &:not(:placeholder-shown):valid:focus {
       color: $c-light-grey;
@@ -137,6 +145,7 @@
 
   &__message {
     width: 100%;
+    
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 16px;
