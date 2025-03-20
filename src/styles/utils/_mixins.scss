@@ -27,7 +27,8 @@
 
   display: grid;
   column-gap: 20px;
-  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-columns: repeat(var(--columns),  minmax(0, 1fr));
+
 
   @include onTablet {
     --columns: 6;
@@ -49,22 +50,15 @@
 
 @mixin contentPaddingInline() {
   min-width: 320px;
-  // max-width: 639px; ???
   padding-inline: $padding-inline-mobile;
 
   @include onTablet {
     padding-inline: $padding-inline-tablet;
-    // min-width: 640px;
-    // max-width: 1279px;
-    // // max-width: 780px;
     margin-inline: auto;
   }
 
   @include onDesktop {
     padding-inline: $padding-inline-desktop;
-    // max-width: 1280px;
-    min-width: 1024px;
-    max-width: 1440px;
   }
 }
 

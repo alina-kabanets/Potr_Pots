@@ -3,9 +3,7 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/modules/{{pagination}}.css';
-
 import { Pagination } from 'swiper/modules';
-
 import 'swiper/swiper.min.css';
 import 'swiper/modules/pagination.min.css';
 

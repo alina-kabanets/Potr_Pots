@@ -18,23 +18,23 @@
     writing-mode: vertical-lr;
 
     @include onTablet {
-      opacity: 1;
       position: absolute;
+      opacity: 1;
     }
 
     @include onDesktop {
-      opacity: 1;
       position: absolute;
+      opacity: 1;
     }
 
     &::before {
       content: '';
       position: static;
+      display: inline-block;
       width: 1px;
       height: 65px;
-      background-color: #828282;
-      display: inline-block;
       margin-bottom: 10px;
+      background-color: #828282;
     }
   }
 }

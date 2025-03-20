@@ -1,15 +1,16 @@
 .page {
   font-family: 'Manrope', sans-serif;
-  color: $c-light-grey;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: $c-light-grey;
   scroll-behavior: smooth;
   background-color: $c-white;
+  overflow-x: hidden;
 
   &__body {
     margin: 0 auto;
-    // margin: 0;
-    // max-width: 1440px;
+    min-width: 320px;
+    overflow-x: hidden;
   }
 }

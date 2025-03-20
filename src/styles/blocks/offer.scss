@@ -1,7 +1,7 @@
 .offer {
-  margin-top: 110px;
   position: relative;
   @include pageGrid;
+  margin-top: 110px;
 
   @include onDesktop {
     margin-top: 100px;
@@ -11,10 +11,10 @@
     display: none;
 
     @include onDesktop {
-      display: block;
       position: absolute;
-      left: -120px;
       top: 0;
+      left: -120px;
+      display: block;
     }
   }
 
@@ -37,11 +37,11 @@
   }
 
   &__title {
+    position: relative;
     margin-top: 40px;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-    position: relative;
     color: $c-grey;
 
     @include onTablet {
@@ -52,27 +52,27 @@
 
     &::after {
       content: '';
-      height: 7px;
-      width: 7px;
-      background: $c-light-grey;
-      display: block;
       position: absolute;
-      transform: rotate(45deg) translateX(-50%);
       top: 24px;
       left: -14px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      background: $c-light-grey;
+      transform: rotate(45deg) translateX(-50%);
 
       @include onTablet {
+        top: 20px;
         left: 0;
         transform: rotate(45deg) translateX(50%);
-        top: 20px;
       }
     }
 
     &--2 {
       @include onDesktop {
         position: absolute;
-        right: 28px;
         top: 186px;
+        right: 28px;
         margin-top: 0;
       }
     }
@@ -89,8 +89,8 @@
     &--2 {
       @include onDesktop {
         position: absolute;
-        right: 12px;
         top: 245px;
+        right: 12px;
         margin-top: 0;
       }
     }
@@ -98,27 +98,27 @@
 
   &__buy-now-button {
     @include buy-now-button;
-    margin-top: 50px;
     grid-column: 1 / -1;
+    margin-top: 50px;
 
     @include onTablet {
-      margin-top: 85px;
       grid-column: 4 / 6;
+      margin-top: 85px;
       background-color: transparent;
       border: 1px solid $c-turquoise;
     }
 
     @include onDesktop {
-      margin-top: 60px;
       grid-row: 2;
       grid-column: 6 / 9;
+      margin-top: 60px;
       width: 238px;
     }
   }
 
   &__discount {
-    margin-top: 40px;
     grid-column: 1 / -1;
+    margin-top: 40px;
     font-family: $font-bebas;
     font-size: 36px;
     line-height: 54px;

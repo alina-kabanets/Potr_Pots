@@ -25,13 +25,13 @@
   }
 
   &__names {
-    visibility: hidden;
     display: none;
+    visibility: hidden;
 
     @include onTablet {
-      visibility: visible;
-      display: block;
       position: absolute;
+      display: block;
+      visibility: visible;
       font-family: $font-bebas;
       font-weight: 400;
       letter-spacing: 0.15em;
@@ -65,7 +65,6 @@
 
     @include onDesktop {
       bottom: -220px;
-      // right: -156px;
       right: -$padding-inline-desktop;
     }
   }
@@ -77,45 +76,31 @@
     }
 
     @include onDesktop {
-      grid-column: 5 / -1; //?
+      grid-column: 5 / -1;
+      align-self: center;
     }
   }
 
   &__photo {
-    margin-top: 25px;
     width: calc(100% + 2 * $padding-inline-mobile);
+    margin-top: 25px;
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
 
     @include onTablet {
-      margin: 0;
       width: 340px;
       height: 255px;
+      margin: 0;
       @include hover(transform, scale(1.02));
     }
 
     @include onDesktop {
       width: 677px;
       height: 507px;
-    }
-  }
-
-  &__about {
-    @include onDesktop {
-      @include pageGrid;
-    }
-  }
-
-  &__description {
-    margin-top: 30px;
-
-    @include onTablet {
-      margin-top: 6px;
-    }
-
-    @include onDesktop {
-      margin-top: 186px;
-      grid-column: 1 / -1;
+      min-width: 0;
+      max-width: 100%;
+      height: auto;
+      align-self: center;
     }
   }
 
@@ -125,34 +110,52 @@
     @include onTablet {
       grid-row: 3;
       grid-column: 1 / 4;
-      margin-top: 53px;
+      margin-top: 60px;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__description {
+    padding-top: 30px;
+
+    @include onTablet {
+      padding-top: 6px;
+    }
+
+    @include onDesktop {
+      max-width: 100%;
+      min-width: 0;
+      padding-top: 186px;
     }
   }
 
   &__rect {
-    display: block;
     position: absolute;
+    display: block;
     top: 100px;
     left: -$padding-inline-mobile;
     right: -$padding-inline-mobile;
     z-index: -1;
+    height: 290px;
     border-left: 100vw solid $c-light-yellow;
     border-bottom: 80px solid transparent;
-    height: 290px;
 
     @include onTablet {
       top: -120px;
       left: -48px;
-      border-left: 35vw solid $c-light-yellow;
       height: 240px;
+      border-left: 35vw solid $c-light-yellow;
     }
 
     @include onDesktop {
-      border-left: 29vw solid $c-light-yellow;
-      border-bottom: 140px solid transparent;
-      height: 305px;
       top: -75px;
       left: -132px;
+      height: 305px;
+      border-left: 29vw solid $c-light-yellow;
+      border-bottom: 140px solid transparent;
     }
   }
 }

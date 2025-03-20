@@ -22,9 +22,9 @@
 }
 
 .icon-menu {
+  display: block;
   height: 48px;
   width: 48px;
-  display: block;
   background-image: url(../images/mobile/menu_icon.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -41,9 +41,7 @@
     position: relative;
     padding-top: 200px;
     padding-bottom: 10px;
-
     @include contentPaddingInline;
-
     box-sizing: border-box;
     height: 100vh;
     background-color: $c-turquoise;
@@ -63,24 +61,24 @@
 
   &__text {
     margin-bottom: 18px;
-    color: $c-white;
     font-size: 12px;
     line-height: 18px;
+    color: $c-white;
     text-transform: uppercase;
     transform: rotate(270deg);
     text-decoration: none;
   }
 
   &__line {
+    width: 1px;
+    height: 44px;
     margin-bottom: 5px;
     background-image: url(../images/mobile/menu-line.png);
-    height: 44px;
-    width: 1px;
   }
 
   &__icon-cross {
-    height: 48px;
     width: 48px;
+    height: 48px;
     background-image: url(../images/mobile/icon-cross.png);
     background-repeat: no-repeat;
     background-position: center;

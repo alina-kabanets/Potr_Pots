@@ -15,9 +15,9 @@
     color: #000;
 
     @include onTablet {
+      grid-column: 1 / 4;
       margin: 0;
       padding-top: 17px;
-      grid-column: 1 / 4;
     }
 
     @include onDesktop {
@@ -35,13 +35,13 @@
   }
 
   &__rect {
-    display: block;
     position: absolute;
+    display: block;
     left: -$padding-inline-mobile;
     z-index: -1;
+    height: 1002px;
     border-left: 100vw solid $c-light-yellow;
     border-bottom: 70px solid transparent;
-    height: 1002px;
 
     @include onTablet {
       left: -$padding-inline-tablet;
@@ -50,10 +50,10 @@
     }
 
     @include onDesktop {
+      left: -$padding-inline-desktop;
       height: 567px;
       border-left: 90vw solid $c-light-yellow;
       border-bottom: 180px solid transparent;
-      left: -$padding-inline-desktop;
     }
 
     &::after {
@@ -61,11 +61,11 @@
       position: absolute;
       top: 0;
       right: 0;
+      height: 170px;
+      width: 160px;
       background-image: url(../images/desktop/round-decor.png);
       background-repeat: no-repeat;
       box-sizing: border-box;
-      height: 170px;
-      width: 160px;
       transform: translate(50%, -50%) rotate(0deg);
       animation: circle 30s linear infinite;
 
@@ -99,8 +99,8 @@
 
   &__info {
     @include onTablet {
-      margin-top: -14px;
       grid-column: 5 / -1;
+      margin-top: -14px;
     }
 
     @include onDesktop {
@@ -109,17 +109,17 @@
   }
 
   &__input {
+    width: 100%;
     margin-top: 20px;
     padding-bottom: 4px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    width: 100%;
     font-family: 'Manrope', sans-serif;
-    color: $c-light-grey;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: $c-light-grey;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
     &:not(:placeholder-shown):valid:focus {
       color: $c-light-grey;
@@ -129,27 +129,26 @@
 
     &:not(:placeholder-shown):invalid:focus {
       color: $c-red;
-      outline: $c-red;
       border-bottom: 1px solid $c-red;
     }
   }
 
   &__message {
     width: 100%;
-    background-color: $c-yellow;
     font-family: 'Manrope', sans-serif;
-    color: $c-light-grey;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: $c-light-grey;
+    background-color: $c-yellow;
   }
 
   &__submit-button {
     @include buy-now-button;
     width: 100%;
     margin-top: 30px;
-    background-color: $c-turquoise;
     color: #fff;
+    background-color: $c-turquoise;
 
     &::after {
       content: url(../images/mobile/arrow-white.png);

@@ -43,6 +43,7 @@
     @include onTablet {
       display: block;
       grid-column: 4 / -1;
+      padding-left: 12px;
     }
 
     @include onDesktop {
@@ -55,13 +56,14 @@
 
     @include onTablet {
       display: block;
-      margin-top: 10px;
       grid-column: 4 / -1;
+      margin-top: 10px;
+      padding-left: 12px;
     }
 
     @include onDesktop {
-      margin-top: 15px;
       grid-column: 8 / -1;
+      margin-top: 15px;
     }
   }
 
@@ -91,9 +93,9 @@
 
   &__photo {
     position: relative;
-    margin-top: -76px;
     z-index: -1;
     width: calc(100% + 2 * $padding-inline-mobile);
+    margin-top: -76px;
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
 
@@ -128,17 +130,17 @@
   }
 
   .swiper-slide {
-    background-color: rgba(0, 0, 0, 0.55);
-    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(17px);
-    padding: 28px 44px 58px;
     width: 100%;
     height: 254px;
+    padding: 28px 44px 58px;
     box-sizing: border-box;
-    color: $c-white;
     font-family: inherit;
     font-size: 16px;
     line-height: 150%;
+    color: $c-white;
+    background-color: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(17px);
     opacity: 1;
   }
 
@@ -149,9 +151,9 @@
 
   .swiper-pagination-bullet {
     cursor: pointer;
-    height: 8px;
-    width: 8px;
     bottom: 38px;
+    width: 8px;
+    height: 8px;
     background-color: $c-white;
     border: 1px solid $c-white;
     border-radius: 0;
@@ -171,18 +173,18 @@
 
   &__toggle-button {
     position: absolute;
-    cursor: pointer;
     width: 50px;
     height: 50px;
+    background-image: url(../images/tablet/plusButton.png);
     border-radius: 50%;
     border: none;
-    background-image: url(../images/tablet/plusButton.png);
+    cursor: pointer;
     @include hover(transform, scale(1.1));
     opacity: 0;
 
     &--active {
-      opacity: 0.8;
       background-image: url(../images/tablet/minusButton.png);
+      opacity: 0.8;
     }
 
     @include onTablet {
@@ -240,30 +242,20 @@
     }
   }
 
-  &__text-container {
-    overflow: hidden;
-    position: relative;
-
-    @include onTablet {
-      position: static;
-      overflow: visible;
-    }
-  }
-
   &__toggle-text {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.45);
-    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(17px);
-    padding: 30px 45px;
+    z-index: 4;
     width: 300px;
     height: min-content;
+    padding: 30px 45px;
     box-sizing: border-box;
-    color: $c-white;
     font-family: inherit;
     font-size: 16px;
     line-height: 150%;
-    z-index: 4;
+    color: $c-white;
+    background-color: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(17px);
 
     @include onDesktop {
       padding: 35px 45px;

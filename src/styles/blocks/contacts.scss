@@ -15,9 +15,9 @@
     color: #000;
 
     @include onTablet {
+      grid-column: 1 / 4;
       margin: 0;
       padding-top: 17px;
-      grid-column: 1 / 4;
     }
 
     @include onDesktop {
@@ -39,15 +39,15 @@
     z-index: -2;
     background-image: url(../images/mobile/rectangle-contacts.png);
     background-repeat: no-repeat;
-    height: 1000px;
     width: calc(100% + 2 * $padding-inline-mobile);
+    height: 1000px;
     margin-left: -$padding-inline-mobile;
     margin-right: -$padding-inline-mobile;
 
     @include onTablet {
       background-image: url(../images/tablet/footer-rect.png);
-      height: 552px;
       width: calc(100% + 2 * $padding-inline-tablet);
+      height: 552px;
       margin-left: -$padding-inline-tablet;
       margin-right: -$padding-inline-tablet;
     }
@@ -66,8 +66,8 @@
     right: -70%;
     background-image: url(../images/desktop/round-decor.png);
     background-repeat: no-repeat;
-    height: 170px;
     width: 100%;
+    height: 170px;
 
     @include onTablet {
       top: -28%;
@@ -98,8 +98,8 @@
 
   &__info {
     @include onTablet {
-      margin-top: -14px;
       grid-column: 5 / -1;
+      margin-top: -14px;
     }
 
     @include onDesktop {
@@ -110,33 +110,33 @@
   &__input {
     margin-top: 20px;
     padding-bottom: 4px;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $c-light-grey;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    width: 100%;
-    font-family: 'Manrope', sans-serif;
-    color: $c-light-grey;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
   }
 
   &__message {
     width: 100%;
-    background-color: $c-yellow;
     font-family: 'Manrope', sans-serif;
-    color: $c-light-grey;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 400;
+    color: $c-light-grey;
+    background-color: $c-yellow;
   }
 
   &__submit-button {
     @include buy-now-button;
     width: 100%;
     margin-top: 30px;
-    background-color: $c-turquoise;
     color: #fff;
+    background-color: $c-turquoise;
 
     &::after {
       content: url(../images/mobile/arrow-white.png);
@@ -160,9 +160,9 @@
   &__point-title {
     margin-top: 34px;
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+    font-weight: 400;
     opacity: 39%;
 
     @include onTablet {
