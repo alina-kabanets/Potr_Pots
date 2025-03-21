@@ -168,7 +168,6 @@
   }
 
   &__point-title:first-of-type {
-    display: block;
     margin-top: 56px;
 
     @include onTablet {
@@ -182,7 +181,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    opacity: 59%;
+    opacity: 0.4;
 
     @include onTablet {
       margin-top: 20px;
