@@ -83,6 +83,7 @@
 }
 
 @mixin buy-now-button {
+  display: block;
   box-sizing: border-box;
   height: 48px;
   padding: 0;
@@ -96,7 +97,7 @@
   border: none;
 
   &:hover {
-    // opacity: 80%;
+    opacity: 80%;
   }
 
   &::after {
