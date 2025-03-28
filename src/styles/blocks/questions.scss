@@ -16,13 +16,12 @@
     color: #000;
 
     @include onTablet {
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
       margin: 0;
       padding-top: 17px;
     }
 
     @include onDesktop {
-      grid-column: 1 / 5;
       padding-top: 42px;
     }
   }
@@ -38,7 +37,6 @@
   &__rect {
     position: absolute;
     left: -$padding-inline-mobile;
-
     z-index: -1;
     display: block;
 
@@ -48,15 +46,19 @@
 
     @include onTablet {
       left: -$padding-inline-tablet;
-      height: 552px;
+      right: -$padding-inline-tablet;
+      height: 490px;
       border-bottom: 80px solid transparent;
+      border-left: 768px solid $c-light-yellow;
+      box-sizing: border-box;
     }
 
     @include onDesktop {
       left: -$padding-inline-desktop;
+      right: 0;
       height: 567px;
       border-bottom: 180px solid transparent;
-      border-left: 90vw solid $c-light-yellow;
+      border-left: 1300px solid $c-light-yellow;
     }
 
     &::after {
