@@ -147,11 +147,12 @@
       @include onTablet {
         position: absolute;
         display: block;
-        right: $padding-inline-tablet;
+        padding-left: 430px;
       }
 
       @include onDesktop {
         position: static;
+        padding-left: 0;
       }
     }
 
