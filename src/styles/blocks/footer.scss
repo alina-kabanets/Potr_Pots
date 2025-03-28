@@ -32,6 +32,12 @@
   }
 
   &__address-text {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+
+    @include hover(transform, scale(1.05));
+
     @include onTablet {
       padding-top: 10px;
     }
